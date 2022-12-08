@@ -15,7 +15,21 @@ def not_found(error):
 @app.route('/', methods=['GET'])
 def test_api_1():
     if request.method == 'GET':
-        return jsonify({'status_code': 200, 'message': 'first end point "test1" is called'})
+        return jsonify({'status_code': 200,
+                        'message': 'first end point "test1" is called',
+                        'position': 'Back End Developer',
+                        'href': '#',
+                        'industry': {'name': 'Information Technology', 'href': '#'},
+                        'description': '',
+                        'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                        'term': 'Full-Time',
+                        'location': 'Remote',
+                        'salary': '500k',
+                        'date': 'Jaunary 9, 2022',
+                        'imageUrl':
+                            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+
+                        })
 
 
 # test API
